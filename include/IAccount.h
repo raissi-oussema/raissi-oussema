@@ -27,7 +27,7 @@ namespace bank
         virtual ~Account();
         virtual bool withdraw (int op_number, std::string date, double ammount) ;
         virtual bool insert   (int op_number, std::string date, double ammount) ;
-        virtual bool transfer (Account* transferAccount, std::string date, double ammount);
+        virtual bool transfer (Account* transferAccount, int op_number, std::string date, double ammount);
         virtual void displayOperations();
     };
 } // namespace bank
