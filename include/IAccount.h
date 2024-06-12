@@ -1,7 +1,7 @@
 // Copyright (C) 2024 PiGod, all rights reserved
 
 /**
- * PURE abstract Account class
+ * Pure abstract Account class
  */
 
 #ifndef _HOME_OUSSEMA_DESKTOP_MYWORKINGFOLDER_CPPMANIPULATION_BANCACCOUNTMANAGEMENT_INCLUDE_IACCOUNT_H_
@@ -26,8 +26,8 @@ namespace bank
     public:
         virtual ~Account();
         virtual bool withdraw (int op_number, std::string date, double ammount) ;
-        virtual bool insert   (int op_number, std::string date, double ammount) ;
-        virtual bool transfer (Account* transferAccount, int op_number, std::string date, double ammount);
+        virtual bool deposit  (int op_number, std::string date, double ammount) ;
+        virtual bool transfer (int op_number, std::string date, double ammount, Account* transferAccount);
         virtual void displayOperations();
     };
 } // namespace bank

@@ -8,10 +8,13 @@ namespace bank
     class CurrentAccount: public Account
     {
     private:
-        /* data */
+        int minimum_required_balance;
     public:
         CurrentAccount(/* args */);
         ~CurrentAccount();
+        bool setMinimumRequiredBalance();
+        bool getMinimumRequiredBalance();
+        void displayOperations();
     };
     
 } // namespace bank

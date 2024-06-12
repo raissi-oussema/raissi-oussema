@@ -1,3 +1,5 @@
+// Copyright (C) 2024 PiGod, all rights reserved
+
 #include <iostream>
 #include <vector>
 #include <thread>
