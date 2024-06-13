@@ -1,6 +1,6 @@
 // Copyright (C) 2024 PiGod, all rights reserved
 
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 #include <thread>
 #include <mutex>
@@ -60,5 +60,15 @@ int main() {
 
     std::cout << "Final balance: " << account.getBalance() << std::endl;
 
+    return 0;
+}
+*/
+#include "../include/ISavingAccount.h"
+int main(){
+    bank::SavingAccount account {100.0, 200.0, 5};
+    account.deposit(1, "20/12/2024",100.0);
+    account.displayOperations();
+    account.withdraw(2, "20/12/2024", 2);
+    account.displayOperations();
     return 0;
 }

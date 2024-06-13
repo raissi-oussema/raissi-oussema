@@ -1,11 +1,11 @@
 // Copyright (C) 2024 PiGod, all rights reserved
 
 #include "../include/IAccount.h"
-#include "../include/IOperation.h"
 #include <iostream>
 
 namespace bank
 {
+    Account::Account(double code, double balance):code(code), balance(balance){};
     bool Account::withdraw(int op_number, std::string date, double ammount)
     {
         if (ammount > this->balance)
@@ -73,5 +73,6 @@ namespace bank
             }
         }
     }
+    Account::~Account(){};
 
 }
