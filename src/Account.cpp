@@ -47,7 +47,7 @@ namespace bank
             this->balance -= ammount;
             account->deposit(op_number, date, ammount);
 
-            std::cout << "You add " << ammount << "to your balance successfully " << std::endl;
+            std::cout << "You added " << ammount << " to account ** " << account->code << " ** successfully" << std::endl;
             return true;
         }
     }
