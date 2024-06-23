@@ -29,7 +29,7 @@ namespace bank
         this->affected_oprations.push_back(operation);
 
         this->balance += ammount;
-        std::cout << "You add " << ammount << "to your balance successfully " << std::endl;
+        std::cout << "You added " << ammount << " to your balance successfully " << std::endl;
         return true;
     }
     bool Account::transfer(int op_number, std::string date, double ammount, Account *account)

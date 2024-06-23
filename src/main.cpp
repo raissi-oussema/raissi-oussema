@@ -65,10 +65,13 @@ int main() {
 */
 #include "../include/ISavingAccount.h"
 int main(){
+    bank::SavingAccount _account {100.0, 200.0, 5};
     bank::SavingAccount account {100.0, 200.0, 5};
     account.deposit(1, "20/12/2024",100.0);
     account.displayOperations();
-    account.withdraw(2, "20/12/2024", 2);
+    account.transfer(2, "20/12/2024", 200.00, &_account);
+    account.displayOperations();
+    account.withdraw(3, "20/12/2024", 2);
     account.displayOperations();
     return 0;
 }
